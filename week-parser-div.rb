@@ -43,10 +43,13 @@ table.each do |t|
   if link.include?("youtube.com") || link.include?("youtu.be")
     string<<"
     <h3>#{name}</h3>
-    <table style=\"width: 550px;\"><tr><td style=\"width: 350px;\">#{get_small(link)}</td><td>#{get_applause(link)}</td></tr></table>"
+    <table style=\"width: 420px;\"><tr><td style=\"width: 350px;\">#{get_small(link)}</td><td>#{get_applause(link)}</td></tr></table>"
   else
     string<<"
-    <h3>#{name}</h3><div style='width: 450px;'>#{get_small(link)}<div style='float:right;'>#{get_applause(link)}</div></div><br/>"
+    <h3>#{name}</h3>
+    <table style=\"width: 420px;\"><tr><td style=\"width: 350px;\">#{get_small(link)}</td><td>#{get_applause(link)}</td></tr></table>"
+    
+    #<div style='width: 450px;'>#{get_small(link)}<div style='float:right;'>#{get_applause(link)}</div></div><br/>
   end
 end
 
